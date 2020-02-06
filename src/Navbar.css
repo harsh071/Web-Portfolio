@@ -1,0 +1,30 @@
+
+.brandLogo {
+    width: 10%;
+
+}
+.try{
+    display: flex;
+    height: 30%;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+}
+
+#basic-nav-dropdown{
+    color: white;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.basic-nav-dropdown{
+    width: min-content;
+}
+
+.nav-color{
+    color: white;
+    font-weight:bolder;
+}

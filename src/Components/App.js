@@ -33,8 +33,6 @@ class App extends React.Component {
                 <div className={'app-card'}>
                     <Card
                         gitLink={'https://github.com/harsh071/EmergencyDepartmentSimulation'}
-
-
                     ></Card>`
                     <Card></Card>
                     <Card></Card>

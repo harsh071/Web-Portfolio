@@ -7,14 +7,11 @@ import '../Navbar.css';
 
 const MyNavbar = () => {
     return (
-        <>
-            <Navbar className="try" expand="md" variant="light" sticky="top">
-                <Navbar.Brand className="col" href="#home">
-                </Navbar.Brand>
+        <>  
+            <Navbar className="nav" expand="md" variant="light" sticky="top">
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse className="left" id="basic-navbar-nav">
+                <Navbar.Collapse className='nav-center'  id="basic-navbar-nav">
                     <Nav className="nav-color">
-                        <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">My Projects</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

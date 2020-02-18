@@ -1,12 +1,12 @@
-import React from 'react'
-import { animated } from 'react-spring'
+import {render} from 'react-dom'
+import React, {useState} from 'react'
+import {useSpring, animated as a} from 'react-spring'
 import './Card.css'
-export default function Card(props) {
 
+export default function Card(props) {
     return (
-        <animated.div
-            className="card"
-            onClick={()=>{window.open(props.gitLink)}}
-        />
-    )
+        <div  className={'c'}>
+
+        </div>
+    );
 }

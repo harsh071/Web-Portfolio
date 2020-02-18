@@ -3,21 +3,18 @@
     width: 10%;
 
 }
-.try{
+.nav{
     display: flex;
     height: 30%;
-    justify-content: space-between;
+    justify-content: center;
     background-color: white;
     color: black;
+    border-bottom: 1px black;
+
 }
 
 #basic-nav-dropdown{
     color: white;
-}
-
-.left{
-    display: flex;
-    justify-content: flex-end;
 }
 
 .basic-nav-dropdown{
@@ -27,4 +24,9 @@
 .nav-color{
     color: white;
     font-weight:bolder;
+}
+
+.nav-center{
+    justify-content: center;
+    font-size: x-large;
 }

@@ -22,7 +22,7 @@ const MyNavbar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse className='nav-center'  id="basic-navbar-nav">
                     <Nav className="nav-color">
-                        <Nav.Link href="#link"> About  </Nav.Link>
+                        <Nav.Link className={'about'} href="#link"> About  </Nav.Link>
                         <Nav.Link href="#projects"> Projects  </Nav.Link>
                         <Nav.Link href="#work"> Work  </Nav.Link>
                         <Nav.Link  href="#contact"> Contact  </Nav.Link>

@@ -1,16 +1,17 @@
 .background {
-    color: white;
+    color: #05386B;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 10px;
 }
 .content {
-    color: white;
+    color: #05386B;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 150px;
     text-align: center;
     font-size: 20px;
+    font-weight: bold;
 }

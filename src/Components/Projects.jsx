@@ -1,31 +1,34 @@
 import React from 'react';
 import './Project.css'
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
     return (
         <div className={'proj'}>
-            <div className={'project'}>
-                <div className={'upper'}>
-                    {<div className={'header'}>Project 1 </div>}
-                    {<h1 className={'project_title'}>Project Name</h1>}
-                </div>
-                {
-                    <p className={'project_body'}>
-                        This is what this project is about
-                        and this is another one which is that lololol
-                    </p>
-                }
+            <ProjectCard
+                header='Chatbot'
+                subHeader='Chatbot made with seq2seq'
+                projectBody='
+                Seq2seq is a family of machine learning approaches used for language processing.
+                '
+            />
+            <ProjectCard
+                header='BetMates: '
+                subHeader='Software Engineering 1 project'
+                projectBody='• Built parts of an android application that allows users to create and bet with their friends or
+against them where they can partake in friendly competition. '
+            />
+            <ProjectCard
+                header='SarasLagan'
+                subHeader='A gujrati matrimonial website. '
+                projectBody='This project targets the gujarati society where arranged marriages are common.'
+            />
+            <ProjectCard
+                header='Project Space boost.'
+                subHeader='A space rocket game in an alien world.'
+                projectBody='Core game loop: Get from point A to B to complete the level, then progress to the next level   '
+            />
 
-
-            </div>
-            <div className={'project'}> Project 12</div>
-            <div className={'project'}> Project 3</div>
-            <div className={'project'}> Project 4</div>
-            <div className={'project'}> Project 4</div>
-            <div className={'project'}> Project 4</div>
-            <div className={'project'}> Project 4</div>
-            <div className={'project'}> Project 4</div>
-            <div className={'project'}> Project 4</div>
         </div>
     )
 }

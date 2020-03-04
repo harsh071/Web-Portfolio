@@ -1,0 +1,32 @@
+.social{
+    position:sticky;
+    width:fit-content;
+    height:fit-content;
+    margin-left: 20px;
+    background-color: rgba(88, 185, 132, 0.98);
+    top: 40%    ;
+}
+
+.git, .linkedin{
+    width: 40px;
+    height: 20px;
+    transition: width 1s;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(88, 185, 132, 0.98);
+
+}
+
+.git:hover{
+    width: 60px;
+}
+.git:hover{
+    width: 60px;
+}
+.git:hover{
+    width: 60px;
+}
+.linkedin:hover{
+    width: 60px;
+}

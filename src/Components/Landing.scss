@@ -1,0 +1,95 @@
+.landing {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    color: white;
+    font-weight: bolder;
+    background-color: #5CDB95;
+    padding: 20px;
+    transition: width 2s;
+
+}
+
+.text-color {
+    color: #76ff71;
+}
+
+.dev-text {
+    font-size: 30px;
+}
+
+.soft-text {
+    width: 42%;
+    text-align: center;
+}
+
+.landing-text-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
+    margin: 20px;
+    width: 100%;
+}
+
+.landing-all-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    color: #05386B;
+    font-weight: bolder;
+    padding: 20px;
+    transition: width 2s;
+}
+
+.landing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.image-landing {
+    width: 20%;
+    border-radius: 50%;
+    transition: width 2s;
+    box-shadow: 3px 3px #379683;
+    transition-duration: 1s,1s;
+    transition-property: box-shadow,width;
+}
+
+.image-landing:hover{
+    box-shadow: 8px 8px #379683;
+    width: 18%;
+
+}
+
+.name-font {
+    color: #05386B;
+    font-size: 50PX;
+    font-weight: bold;
+    text-shadow: 3px 3px #379683;
+    transition: text-shadow 1s;
+
+}
+
+.name-font:hover{
+    text-shadow: 6px 3px #379683;
+    font-weight: normal;
+}
+
+.right-content {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    margin: 10px;
+}
+
+.right-text-content {
+    text-align: right;
+}

@@ -1,0 +1,66 @@
+[33mcommit e2fbf2e303c2b5f5a3e164b8a42b92e3743db69b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Tue Mar 3 21:32:07 2020 -0800
+
+    Added color coding and Projects.
+
+[33mcommit c03da8e709948765ae9af2d4a2a1f7b5e24093a5[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Tue Mar 3 20:31:37 2020 -0800
+
+    Updated components
+
+[33mcommit c72a57912abc13a338b8818b86e1871b85c9d108[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Mon Feb 17 19:02:01 2020 -0800
+
+    Fixed componebts:
+
+[33mcommit 0da7c29a938dde399344505d6af2a9a98fc227e1[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Mon Feb 17 18:37:51 2020 -0800
+
+     Added landing page, with some react springs transitions.
+
+[33mcommit 60d93527eed91823abcf971b40a0dc6e679b2331[m
+Merge: d8ee603 481a35c
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Wed Feb 5 20:39:01 2020 -0800
+
+    Merge branch 'master' of https://github.com/harsh071/Web-Portfolio
+
+[33mcommit d8ee603e370972e6af301693b9ec14f0eb34b1a9[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Wed Feb 5 20:36:36 2020 -0800
+
+    'gh-page'
+
+[33mcommit d98f3c208dfb9b31c73567e959d093988dcf1ba8[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Wed Feb 5 20:23:23 2020 -0800
+
+    Made a skeleton for the website.
+
+[33mcommit 481a35ce6027b20fd12cc829f5c8154fa16a445f[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Sat Feb 1 18:45:45 2020 -0600
+
+    Set theme jekyll-theme-merlot
+
+[33mcommit 3bdeedbeadb046549bb9c4a794975802dd4d78c4[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Sat Feb 1 18:39:30 2020 -0600
+
+    Set theme jekyll-theme-merlot
+
+[33mcommit eb3c0d9b63631c7a2a6aec802e5011dc2dcbe2d9[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Tue Jan 14 19:41:13 2020 -0800
+
+    Initialized the react app.
+
+[33mcommit 85430afbd919f1f0adaaffa9a109042150e44fa7[m
+Author: Harsh <harshpatel071@gmail.com>
+Date:   Mon Jan 13 21:51:58 2020 -0800
+
+    Initial commit

@@ -3,13 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './Navbar.css';
-import Social from "./Social";
 
 
 const MyNavbar = () => {
     return (
         <>
-            <Navbar className="nav" expand="md" variant="light" sticky="top">
+            <Navbar className="nav" expand="md" variant="light" >
                 <Navbar.Brand href="#home">
                     <img
                         alt=""

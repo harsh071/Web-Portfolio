@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import {useSpring, useTransition, animated} from 'react-spring'
 import {Transition} from 'react-spring/renderprops'
 import './Landing.scss';
-import Social from "./Social";
 
 
 export default function Landing() {

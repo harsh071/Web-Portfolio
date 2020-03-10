@@ -7,9 +7,9 @@
     display: flex;
     height: 30%;
     justify-content: center;
-    background-color: 'transparent';
     color: white;
     border-bottom: 1px black;
+    flex-direction: column;;
 }
 
 #basic-nav-dropdown{
@@ -36,6 +36,9 @@ nav.link{
 }
 
 .harsh{
-    position: sticky;
     top:40%
+}
+
+nav .nav-center .nav-color.navbar-nav a{
+    color: white !important;
 }

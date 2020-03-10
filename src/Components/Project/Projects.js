@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css'
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 export default function Projects() {
     return (
@@ -22,6 +22,16 @@ against them where they can partake in friendly competition. '
                 header='SarasLagan'
                 subHeader='A gujrati matrimonial website. '
                 projectBody='This project targets the gujarati society where arranged marriages are common.'
+            />
+            <ProjectCard
+                header='Project Space boost.'
+                subHeader='A space rocket game in an alien world.'
+                projectBody='Core game loop: Get from point A to B to complete the level, then progress to the next level   '
+            />
+            <ProjectCard
+                header='Project Space boost.'
+                subHeader='A space rocket game in an alien world.'
+                projectBody='Core game loop: Get from point A to B to complete the level, then progress to the next level   '
             />
             <ProjectCard
                 header='Project Space boost.'

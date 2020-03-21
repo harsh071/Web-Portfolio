@@ -1,0 +1,20 @@
+.work-experience{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title{
+    color: white;
+    align-self: center;
+}
+
+.work{
+    background: #64ffad;
+}
+
+
+.work-container{
+    margin: 20px
+}

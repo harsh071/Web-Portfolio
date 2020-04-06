@@ -6,7 +6,6 @@ import '../App/App.css'
 import Landing from '../Landing/Landing'
 import Projects from "../Project/Projects";
 
-
 class App extends React.Component {
     render() {
         return (

@@ -7,9 +7,17 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    box-shadow: 3px 3px #379683;
+
+    transition-duration: 0.5s,0.5s;
+    transition-property: box-shadow,width;
+}
+.project:hover{
+    box-shadow: 8px 8px #379683;
+    width: 300px;
+    height: 300px;
 
 }
-
 .upper{
     display: flex;
     flex-direction: column;

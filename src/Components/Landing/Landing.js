@@ -15,7 +15,7 @@ export default function Landing() {
 
                     <animated.img style={props} src={"./LOGO.png"} className={'image-landing'}/>
 
-                    <div className={'landing-text'}>
+                    <div id={'hi'} className={'landing-text'}>
                         <Transition
                             items={items} keys={item => item.key}
                             from={{transform: 'translate3d(0,-220px,0)'}}

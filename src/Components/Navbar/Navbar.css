@@ -23,6 +23,13 @@
 .nav-color{
     color: white;
     font-weight:bolder;
+
+}
+
+nav .nav-center .nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
 }
 
 .nav-center{

@@ -1,33 +1,40 @@
-.project{
-    background:  black;
-    width: 300px;
-    height: 200px;
+.project {
+    background: linear-gradient(180deg, rgba(12,0,50,1) 0%, rgba(8,0,32,1) 47%, rgba(4,0,16,1) 74%, rgba(0,0,0,1) 100%);
+    width: 350px;
+    height: 250px;
     padding: 15px;
 
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    box-shadow: 3px 3px #379683;
-
-    transition-duration: 0.5s,0.5s;
-    transition-property: box-shadow,width;
-    color:white;
+    transition-duration: 0.5s, 0.5s;
+    transition-property: box-shadow, width;
+    color: white;
     word-break: break-all;
+    border-top: 1px solid white;
+    box-shadow: 4px 2px #000;
 
 }
-.project:hover{
-    box-shadow: 8px 8px #379683;
-    width: 300px;
-    height: 200px;
+
+@media only screen and (max-width: 900px) {
+    .project{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.project:hover {
+    box-shadow: 5px 5px #379683;
 
 }
-.upper{
+
+.upper {
     display: flex;
     flex-direction: column;
 
 }
 
-.header{
+.header {
     font-weight: bold;
     position: relative;
 }

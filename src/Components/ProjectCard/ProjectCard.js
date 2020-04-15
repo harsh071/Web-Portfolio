@@ -10,6 +10,7 @@ export default function ProjectCard(props) {
             </div>
             <p className={'project_body'}>
                 {props.language}
+                <div style={{cursor:'pointer', textDecoration: 'underline'}} onClick={()=>window.open(props.url)}>Link</div>
             </p>
 
         </div>

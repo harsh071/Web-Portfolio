@@ -4,15 +4,15 @@
     height: fit-content;
     margin: 10px auto 20px auto;
     padding: 20px;
-    background: black;
-    box-shadow: 3px 3px #379683;
+    background: #0c0032;
     width: 90%;
+    box-shadow: 5px 5px #000;
 
     transition-duration: 0.5s,0.5s;
     transition-property: box-shadow,width;
 }
 .project-list-item:hover{
-    box-shadow: 8px 8px #379683;
+    box-shadow: 5px 5px #379683;
 }
 .project-list-item-name{
     font-size: 30px;

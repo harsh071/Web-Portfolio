@@ -49,3 +49,8 @@ nav.link{
 nav .nav-center .nav-color.navbar-nav a{
     color: white !important;
 }
+
+.about{
+    display: flex;
+    align-items: center;
+}

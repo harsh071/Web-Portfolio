@@ -31,14 +31,14 @@ class Projects extends React.Component {
     }
     render() {
         let myProjects = this.state.projects;
-        let  listProjects = myProjects.map((project)=><ProjectListItem projectName={project.name} description={project.description} projectLanguage={project.language} url={project.html_url}/>)
 
         return (
-            <div>
+            <div className='Project-container'>
+                <div className='projects-header'>PROJECTS</div>
                 <ProjectListItem projectName={'Chatbot'} description={'Seq2seq is a family of machine learning approaches used for language processing.'} projectLanguage={'Chatbot made with seq2seq'}/>
                 <ProjectListItem projectName={'BetMates'} description={' Built parts of an android application that allows users to create and bet with their friends or against them where they can partake in friendly competition. '} projectLanguage={'Software Engineering 1 project'}/>
                 <ProjectListItem projectName={'Project Space boost.'} description={'Core game loop: Get from point A to B to complete the level, then progress to the next level'} projectLanguage={'A space rocket game in an alien world.'}/>
-
+                <div className='projects-header'>PROJECTS connected to github</div>
                 <div className={'project-grid'}>
                     {myProjects.slice(0, this.state.itemsToShow).map((project, i) =>
                         <ProjectCard
@@ -50,11 +50,11 @@ class Projects extends React.Component {
                     )}
                 </div>
 
-                {<a className="btn btn-primary show_more" onClick={this.showMore}>
+                {<a className="show" onClick={this.showMore}>
                     {this.state.expanded ? (
-                        <span>Show less</span>
+                        <div className="show-text">Show less</div>
                     ) : (
-                        <span>Show more</span>
+                        <div className="show-text">Show more</div>
                     )
                     }
                 </a>}

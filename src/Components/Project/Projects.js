@@ -35,31 +35,22 @@ class Projects extends React.Component {
 
         return (
             <div>
+                <ProjectListItem projectName={'Chatbot'} description={'Seq2seq is a family of machine learning approaches used for language processing.'} projectLanguage={'Chatbot made with seq2seq'}/>
+                <ProjectListItem projectName={'BetMates'} description={' Built parts of an android application that allows users to create and bet with their friends or against them where they can partake in friendly competition. '} projectLanguage={'Software Engineering 1 project'}/>
+                <ProjectListItem projectName={'Project Space boost.'} description={'Core game loop: Get from point A to B to complete the level, then progress to the next level'} projectLanguage={'A space rocket game in an alien world.'}/>
+
                 <div className={'project-grid'}>
-                    <ProjectCard
-                        header='Chatbot'
-                        subHeader='Chatbot made with seq2seq'
-                        projectBody='
-                Seq2seq is a family of machine learning approaches used for language processing.
-                '
-                    />
-                    <ProjectCard
-                        header='BetMates: '
-                        subHeader='Software Engineering 1 project'
-                        projectBody='• Built parts of an android application that allows users to create and bet with their friends or
-against them where they can partake in friendly competition. '
-                    />
-                    <ProjectCard
-                        header='Project Space boost.'
-                        subHeader='A space rocket game in an alien world.'
-                        projectBody='Core game loop: Get from point A to B to complete the level, then progress to the next level   '
-                    />
-                    <ProjectListItem projectName={'Chatbot'} description={'Seq2seq is a family of machine learning approaches used for language processing.'} projectLanguage={'Chatbot made with seq2seq'}/>
+                    {myProjects.slice(0, this.state.itemsToShow).map((project, i) =>
+                        <ProjectCard
+                            name={project.name}
+                            description={project.description}
+                            language={project.language}
+                            url={project.html_url}
+                        />
+                    )}
                 </div>
-                {myProjects.slice(0, this.state.itemsToShow).map((project, i) =>
-                    <ProjectListItem projectName={project.name} description={project.description} projectLanguage={project.language} url={project.html_url}/>
-                )}
-                {<a className="btn btn-primary" onClick={this.showMore}>
+
+                {<a className="btn btn-primary show_more" onClick={this.showMore}>
                     {this.state.expanded ? (
                         <span>Show less</span>
                     ) : (

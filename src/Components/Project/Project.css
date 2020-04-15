@@ -21,3 +21,11 @@
         grid-template-columns: auto;
     }
 }
+
+.show_more{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
+}

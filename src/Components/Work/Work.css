@@ -9,21 +9,10 @@
     font-weight: bolder;
 
     border-left : 2px solid white;
-    border-right : 2px solid white;
     height: 30px;
 
 }
 
-.hidden{
-    display: none;
-}
-
-.work-content:hover{
-    background: #64ffad;
-    cursor: pointer;
-}
-
-.selected{
-    opacity: 1;
-    background: #64ffad;
+.work-place{
+    color:white;
 }

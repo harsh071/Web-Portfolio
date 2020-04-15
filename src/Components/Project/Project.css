@@ -23,9 +23,17 @@
 }
 
 .show_more{
-    width: fit-content;
+    width: 115px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px auto 10px auto;
+    background: white;
+    border: white;
+}
+.show_more:hover{
+    background:  #05386B;
+    color: white;
+    text-color:white;
 }

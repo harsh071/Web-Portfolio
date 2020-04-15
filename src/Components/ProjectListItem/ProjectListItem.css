@@ -4,9 +4,9 @@
     height: fit-content;
     margin: 10px auto 20px auto;
     padding: 20px;
-    background: #64ffad;
+    background: black;
     box-shadow: 3px 3px #379683;
-    width: 1000px;
+    width: 90%;
 
     transition-duration: 0.5s,0.5s;
     transition-property: box-shadow,width;
@@ -18,7 +18,7 @@
     font-size: 30px;
     font-weight: 700;
     color: white;
-    text-shadow: 2.3px -0.7px rgba(0, 0, 0, 0.6);
+    text-shadow: 2.3px -0.7px rgba(0, 0, 0, 0.31);
 
 }
 
@@ -30,7 +30,7 @@
 
 .project-list-item-language{
     font-size: 12px;
-    color: black;
+    color: white;
     font-weight: 700;
 
 }

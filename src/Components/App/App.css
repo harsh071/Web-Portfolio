@@ -13,7 +13,7 @@
 .frag {
     display: flex;
     font-family: 'Raleway', sans-serif;
-    background-color: #5CDB95;
+    background-color: black;
     flex-direction: column;
 }
 

@@ -1,0 +1,29 @@
+.project-list-item{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    background: #64ffad;
+    box-shadow: 3px 3px #379683;
+
+}
+
+.project-list-item-name{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.project-list-item-description{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.project-list-item-language{
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+
+}

@@ -23,7 +23,7 @@ class Projects extends React.Component {
 
     componentDidMount() {
         axios.get('https://api.github.com/users/harsh071/repos', {
-            headers: {Authorization: 'Token d05ce541872e23d0d1b47479112bea6015976496'}
+            headers: {Authorization: 'Token 45e966a18085ff427bc031ff1523e05f6b65825e'}
         })
             .then((repositories) => {
                 this.setState({projects: repositories.data})

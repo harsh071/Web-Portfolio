@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
-import {useSpring, useTransition, animated} from 'react-spring'
+import {useSpring,animated} from 'react-spring'
 import {Transition} from 'react-spring/renderprops'
-import './Landing.scss';
+import './Landing.css';
 
 
 export default function Landing() {
@@ -15,7 +15,7 @@ export default function Landing() {
 
                     <animated.img style={props} src={"./LOGO.png"} className={'image-landing'}/>
 
-                    <div id={'hi'} className={'landing-text'}>
+                    <div className={'landing-text'}>
                         <Transition
                             items={items} keys={item => item.key}
                             from={{transform: 'translate3d(0,-220px,0)'}}
@@ -40,24 +40,6 @@ export default function Landing() {
                         </animated.p>
                     </div>
                 </div>
-
-                {/*<div className={'right-content'}>*/}
-                {/*    <div>*/}
-                {/*        <Transition*/}
-                {/*            items={items} keys={item => item.key}*/}
-                {/*            from={{transform: 'translate3d(150px,0,0)'}}*/}
-                {/*            enter={{transform: 'translate3d(0,0px,0)'}}*/}
-                {/*            leave={{transform: 'translate3d(0,80px,0)'}}>*/}
-                {/*            {item => props => <p className={'dev-text'} style={props}>*/}
-                {/*                Software Developer*/}
-                {/*            </p>}*/}
-                {/*        </Transition>*/}
-                {/*        <p>*/}
-                {/*            skilled in Object-Oriented Programming (OOP), Web and Mobile Development,*/}
-                {/*            Artificial Intelligence.*/}
-                {/*        </p>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             <a href="https://github.com/bchiang7" target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub"
                className="social__StyledLink-anu6nt-1 jZDtYm">
                 <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549"><title>GitHub</title>

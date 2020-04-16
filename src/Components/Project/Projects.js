@@ -3,7 +3,6 @@ import './Project.css'
 import ProjectCard from "../ProjectCard/ProjectCard";
 import axios from 'axios';
 import ProjectListItem from "../ProjectListItem/ProjectListItem";
-import {forEach} from "react-bootstrap/cjs/ElementChildren";
 
 
 class Projects extends React.Component {
@@ -42,6 +41,7 @@ class Projects extends React.Component {
                 <div className={'project-grid'}>
                     {myProjects.slice(0, this.state.itemsToShow).map((project, i) =>
                         <ProjectCard
+                            key={i}
                             name={project.name}
                             description={project.description}
                             language={project.language}
@@ -50,14 +50,14 @@ class Projects extends React.Component {
                     )}
                 </div>
 
-                {<a className="show" onClick={this.showMore}>
+                {<div className="show" onClick={this.showMore}>
                     {this.state.expanded ? (
                         <div className="show-text">Show less</div>
                     ) : (
                         <div className="show-text">Show more</div>
                     )
                     }
-                </a>}
+                </div>}
             </div>
 
         )

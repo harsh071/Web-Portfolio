@@ -46,7 +46,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
     margin-left: 10px;
     align-items: center;
 }
@@ -61,7 +60,7 @@
 }
 
 .image-landing:hover{
-    box-shadow: 8px 8px black;
+    box-shadow: 8px 8px #379683;
     width: 18%;
 
 }
@@ -70,13 +69,33 @@
     color: white;
     font-size: 50PX;
     font-weight: bold;
-    text-shadow: 3px 3px black;
+    text-shadow: 3px 3px #102b25;
     transition: text-shadow 1s;
+    margin: 10px;
 
 }
+@media only screen and (max-width: 1200px) {
+    .name-font{
+        font-size:40px;
+    }
+
+    .dev-text {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .name-font{
+        font-size:30px;
+    }
+
+    .dev-text {
+        font-size: 20px;
+    }
+}
+
 
 .name-font:hover{
-    text-shadow: 6px 3px white;
+    text-shadow: 6px 3px #379683;
     font-weight: normal;
 }
 

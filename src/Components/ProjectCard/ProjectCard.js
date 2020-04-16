@@ -8,10 +8,10 @@ export default function ProjectCard(props) {
                 <h3 className={'header'}>{props.name} </h3>
                 <div className={'project_title'}>{props.description}</div>
             </div>
-            <p className={'project_body'}>
+            <div className={'project_body'}>
                 {props.language}
                 <div style={{cursor:'pointer', textDecoration: 'underline'}} onClick={()=>window.open(props.url)}>Link</div>
-            </p>
+            </div>
 
         </div>
     );

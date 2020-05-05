@@ -1,10 +1,11 @@
 .landing {
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 100%;
     color: white;
-    background: linear-gradient(180deg, rgba(12,0,50,1) 0%, rgba(10,0,42,1) 36%, rgba(0,0,0,1) 100%);
+    background: transparent;
     transition: width 2s;
+    margin-top:10px;
 }
 
 
@@ -14,11 +15,14 @@
 
 .dev-text {
     font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #FF5F6D;
+
 }
 
 .soft-text {
     text-align: center;
-    font-size: 20px
+    font-size: 20px;
 
 }
 
@@ -37,7 +41,7 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    color: white;
+    color: black;
     font-weight: bolder;
     transition: width 2s;
 }
@@ -51,8 +55,9 @@
 }
 
 .image-landing {
-    width: 17%;
+    width: 300px;
     border-radius: 50%;
+    border: 1px orangered solid;
     transition: width 2s;
     box-shadow: 3px 3px #fff;
     transition-duration: 1s,1s;
@@ -60,18 +65,29 @@
 }
 
 .image-landing:hover{
+    border: 0px #FF5F6D solid;
     box-shadow: 8px 8px #379683;
-    width: 18%;
-
+    width: 350px;
 }
 
 .name-font {
     color: white;
-    font-size: 50PX;
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 50px;
     font-weight: bold;
     text-shadow: 3px 3px #102b25;
-    transition: text-shadow 1s;
+    transition-duration: 1s,1s;
+    transition-property: text-shadow,background;
     margin: 10px;
+}
+.name-font:hover{
+    text-shadow: 6px 3px #379683;
+    font-weight: normal;
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 @media only screen and (max-width: 1200px) {
@@ -82,6 +98,16 @@
     .dev-text {
         font-size: 25px;
     }
+
+    .image-landing {
+        width: 250px;
+
+    }
+
+    .image-landing:hover{
+        width: 300px;
+    }
+
 }
 @media only screen and (max-width: 400px) {
     .name-font{
@@ -91,13 +117,20 @@
     .dev-text {
         font-size: 20px;
     }
+
+
+    .image-landing {
+        width: 200px;
+    }
+
+    .image-landing:hover{
+
+        width: 250px;
+    }
 }
 
 
-.name-font:hover{
-    text-shadow: 6px 3px #379683;
-    font-weight: normal;
-}
+
 
 .right-content {
     display: flex;

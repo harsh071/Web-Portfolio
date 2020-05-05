@@ -1,24 +1,22 @@
-.work-experience{
+.work-experience {
     margin-top: 20px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(12,0,50,1) 0%, rgba(8,0,32,1) 47%, rgba(4,0,16,1) 74%, rgba(0,0,0,1) 100%);
+    background: #203864;
 }
-
 .title{
     color: white;
-    margin: 30px 30px 0px 35px;
+     margin: 30px 30px 0px 35px;
     font-size: 30px;
     text-decoration: underline;
     align-self: center;
-
 }
 
-
 .work{
-    color: white;
+    color: black;
 }
 
 

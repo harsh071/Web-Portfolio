@@ -8,15 +8,19 @@ export default function AboutMe(props) {
         <div className='work-experience'>
             <h1 id={'hi'} className='title'>Work Experience</h1>
             <div className='work-container'>
-                <Work className='work'
-                      place={'Success and Logistics Specialist | SkipTheDishes March 2018 – Present'}
+                <Work
+                      place={'SkipTheDishes'}
+                      position={'Success and Logistics Specialist'}
+                      time={'March 2018 – Present'}
                 />
-            </div>
+                <hr></hr>
+                <Work
+                      place={'Lotlinx '}
+                      position={'React developer'}
+                      time={'January 2020 – Present'}
 
-            <div className='work-container'>
-                <Work className='work'
-                      place={'React developer | Lotlinx January 2020 – Present'}
                 />
+                <hr></hr>
             </div>
 
         </div>

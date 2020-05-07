@@ -5,7 +5,7 @@ import {Transition} from 'react-spring/renderprops'
 import './Landing.css';
 import {ListGroup} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default function Landing() {
@@ -15,25 +15,27 @@ export default function Landing() {
     return (
         <div className={'landing'}>
             <div className={'landing-all-content'}>
-                <animated.img style={props} src={process.env.PUBLIC_URL+"/LOGO.png"} className={'image-landing'}/>
+                <animated.img style={props} src={process.env.PUBLIC_URL + "/LOGO.png"} className={'image-landing'}/>
                 <div className={'landing-text'}>
                     <Transition
                         items={items} keys={item => item.key}
                         from={{transform: 'translate3d(0,-220px,0)'}}
                         enter={{transform: 'translate3d(0,0px,0)'}}
                         leave={{transform: 'translate3d(0,300px,0)'}}>
-                        {item => props => <h1 className='name-font' style={props}>
+                        {item => props => <div className='name-font' style={props}>
                             {item.text}
-                        </h1>}
+                        </div>}
                     </Transition>
                     <Transition
                         items={items} keys={item => item.key}
                         from={{transform: 'translate3d(150px,0,0)'}}
                         enter={{transform: 'translate3d(0,0px,0)'}}
                         leave={{transform: 'translate3d(0,80px,0)'}}>
-                        {item => props => <p className={'dev-text'} style={props}>
+                        {item => props =>
+                            {
+                                return <p href={'#'} className={'dev-text'} style={{props}}>
                             Software Developer
-                        </p>}
+                        </p>}}
                     </Transition>
                     <Transition
                         items={items} keys={item => item.key}
@@ -45,10 +47,14 @@ export default function Landing() {
                         </h2>}
                     </Transition>
                     <div className={'social-media'}>
-                        <ListGroup horizontal>
-                            <ListGroup.Item ><FontAwesomeIcon style={{width:'30px',height:'30px',color:'rgb(40,103,178)'}} icon={faLinkedinIn}/></ListGroup.Item>
-                            <ListGroup.Item ><FontAwesomeIcon style={{width:'30px',height:'30px'}} icon={faEnvelope}/></ListGroup.Item>
-                        </ListGroup>
+                        <div className={'social-media-item'}
+                             onClick={()=>{window.open('https://linkedin.com/in/harshp071')}}
+                        ><FontAwesomeIcon
+                            style={{width: '30px', height: '30px', color: 'rgb(40,103,178)'}} icon={faLinkedinIn}/>
+                        </div>
+                        <div className={'social-media-item'}
+                             onClick={()=>{window.open('mailto:hypharsh@gmail.com')}}
+                        ><FontAwesomeIcon style={{width: '30px', height: '30px'}} icon={faEnvelope}/></div>
                     </div>
                 </div>
             </div>

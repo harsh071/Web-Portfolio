@@ -14,12 +14,16 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                     <div className={'frag'}>
-                        <ParticlesContainer/>
                         <Route path="/" exact component={Landing}></Route>
-                        {/*<Route path="/" exact component={AboutMe}></Route>*/}
+                        <Route path="/" exact component={AboutMe}></Route>
+                        {/*<Route path="/" exact component={Projects}></Route>*/}
+                        <Route path="/" component={WorkExperience}></Route>
+                        {/*<Route path="/Projects" component={Projects}></Route>*/}
                         {/*<Route path="/" exact component={Projects}></Route>*/}
                         {/*<Route path="/Work" component={WorkExperience}></Route>*/}
                         {/*<Route path="/Projects" component={Projects}></Route>*/}
+                        <ParticlesContainer/>
+
                     </div>
             </BrowserRouter>
         )

@@ -3,11 +3,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 0px 15px 0px 15px;
-    padding: 0px 15px 0px 15px;
-
     font-weight: bolder;
-
+    margin:40px;
     border-left : 2px solid white;
     border-right : 2px solid white;
     height: 30px;
@@ -15,5 +12,9 @@
 }
 
 .work-place{
-    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 23px;
+    color:black;
 }

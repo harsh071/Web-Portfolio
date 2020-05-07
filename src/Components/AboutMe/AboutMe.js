@@ -7,7 +7,7 @@ export default function AboutMe(props) {
         <div className={'about'}>
             <p className={'content'}>
             </p>
-            <WorkExperience/>
+            {/*<WorkExperience/>*/}
         </div>
     )
 }

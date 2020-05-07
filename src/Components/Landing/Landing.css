@@ -6,6 +6,14 @@
     background: transparent;
     transition: width 2s;
     margin-top:10px;
+
+    height:100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 
@@ -17,7 +25,13 @@
     font-size: 30px;
     text-decoration: underline;
     text-decoration-color: #FF5F6D;
+    color: black;
 
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 800;
+    overflow: hidden;
 }
 
 .soft-text {
@@ -44,6 +58,7 @@
     color: black;
     font-weight: bolder;
     transition: width 2s;
+    margin: auto;
 }
 
 .landing-text {
@@ -75,13 +90,14 @@
     background: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     text-shadow: 3px 3px #102b25;
     transition-duration: 1s,1s;
     transition-property: text-shadow,background;
     margin: 10px;
 }
+
 .name-font:hover{
     text-shadow: 6px 3px #379683;
     font-weight: normal;
@@ -90,6 +106,26 @@
     background: linear-gradient(to left, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.social-media{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #FFC371;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.social-media-item{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.social-media-item:hover{
+    background: #FFC371;
+}
+
 @media only screen and (max-width: 1200px) {
     .name-font{
         font-size:40px;

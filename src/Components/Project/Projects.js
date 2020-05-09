@@ -3,6 +3,7 @@ import './Project.css'
 import ProjectCard from "../ProjectCard/ProjectCard";
 import axios from 'axios';
 import ProjectListItem from "../ProjectListItem/ProjectListItem";
+import {Link} from "react-router-dom";
 
 
 class Projects extends React.Component {
@@ -20,7 +21,7 @@ class Projects extends React.Component {
                 <ProjectListItem projectName={'BetMates'} description={' Built parts of an android application that allows users to create and bet with their friends or against them where they can partake in friendly competition. '} projectLanguage={'Java, XML, HSQLDB'}/>
                 <ProjectListItem projectName={'Satsang Insight: Journey to Spirituality in progress '} description={'Assists people in the community to improve their spiritual journey. Consists of a personalized\n' +
                 'feed of media and reminders to achieve daily spiritual goals.'} projectLanguage={'React Native, MongoDB'}/>
-                <a href={'/Web-Portfolio/ProjectGrid'} className='projects-button'>Other Projects</a>
+                <Link to={'/Web-Portfolio/ProjectGrid'} className='projects-button'>Other Projects</Link>
 
             </div>
 

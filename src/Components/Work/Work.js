@@ -11,7 +11,7 @@ export default function Work(props){
                 <div style={{margin:'0 10px'}}>{' | '}</div>
                 <div>{props.position}</div>
             </div>
-            <div style={{margin:'0 10px',textDecoration:'underline '}} className='work-time' >{props.time}</div>
+            <div style={{margin:'0 10px'}} className='work-time' >{props.time}</div>
 
         </div>
     )

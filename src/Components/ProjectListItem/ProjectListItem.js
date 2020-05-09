@@ -16,7 +16,7 @@ const ProjectListItem = (props) => {
             <div className={'project-list-item-language'}>
                 {props.projectLanguage}
             </div>
-            {props.url&&<Link className={'project-list-item-language'} onClick={()=>window.open(props.url)}>{'View on github'}</Link>}
+            {props.url&&<Link className={'project-list-item-language'} onClick={()=>window.open(props.url)}>{'Github'}</Link>}
         </Jumbotron>
     )
 };

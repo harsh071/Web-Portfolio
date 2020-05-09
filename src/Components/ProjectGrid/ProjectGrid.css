@@ -1,0 +1,44 @@
+
+.project-grid{
+    margin: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-items: center;
+
+}
+.show-text{
+    width: 115px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto 10px auto;
+    background: #FF5F6D;
+    border: white;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    transition: box-shadow 0.5s;
+}
+
+.show-text:hover{
+    background: #FF5F6D;
+    color:white;
+    box-shadow: 2px 2px black;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .project-grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .project-grid{
+        grid-template-columns: auto;
+    }
+}

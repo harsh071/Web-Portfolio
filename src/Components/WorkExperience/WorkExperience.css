@@ -16,15 +16,15 @@
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    color: white;
     text-shadow: 3px 3px #102b25;
-    padding: 10px;
-    margin: 30px 30px 30px 35px;
-    font-size: 40px;
-    text-decoration: underline;
-    align-self: center;
+    padding: 5px;
+    width: 100%;
+    margin:20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:30px;
+    color:white;
     background: #FF5F6D; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF5F6D, #FFC371); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FF5F6D, #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -50,6 +50,7 @@
         text-align: center;
     }
 }
+
 @media only screen and (max-width: 400px) {
     .title {
         font-size: 25px;

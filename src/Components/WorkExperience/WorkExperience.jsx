@@ -1,13 +1,12 @@
 import React from 'react';
 import './WorkExperience.css'
 import Work from "../Work/Work";
-import {Jumbotron} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 export default function AboutMe(props) {
 
     return (
-        <Jumbotron>
+        <Jumbotron className={'home-jumbotron'}>
                 <h1 id={'hi'} className='title'>Work Experience</h1>
                 <div className='work-container'>
                     <Work
@@ -22,8 +21,7 @@ export default function AboutMe(props) {
                         position={'Success and Logistics Specialist'}
                         time={'March 2018 – Present'}
                     />
-                    <hr style={{marginBottom:'20px'}}></hr>
-                    <Link to={'ProjectGrid'} style={{display:'flex',justifyContent:'center',alignItems:'center',background:'#FF5F6D',color:'white',borderRadius:'10px',width:'150px',margin:'auto',fontSize:'20px'}}>Projects</Link>
+                    <hr></hr>
                 </div>
         </Jumbotron>
 

@@ -6,7 +6,7 @@ import axios from 'axios';
 class ProjectGrid extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {projects: [],itemsToShow: 3, showMore: false}
+        this.state = {projects: [], itemsToShow: 3, showMore: false}
         this.showMore = this.showMore.bind(this);
     }
 
@@ -30,7 +30,9 @@ class ProjectGrid extends React.Component {
     render() {
         let myProjects = this.state.projects;
 
-        return <div className={'project-grid'}>
+        return <div>
+            <div style={{margin:'40px'}}>Projects linked to github repo.</div>
+        <div className={'project-grid'}>
             {myProjects.slice(0, this.state.itemsToShow).map((project, i) =>
                 <ProjectCard
                     key={i}
@@ -40,6 +42,7 @@ class ProjectGrid extends React.Component {
                     url={project.html_url}
                 />
             )}
+        </div>
             {<div className="show" onClick={this.showMore}>
                 {this.state.expanded ? (
                     <div className="show-text">Show less</div>

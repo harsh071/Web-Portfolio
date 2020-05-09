@@ -1,26 +1,18 @@
 .project {
-    background: #203864;
+    background: white;
     width: 350px;
     height: 250px;
     padding: 15px;
-
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     transition-duration: 0.5s, 0.5s;
     transition-property: box-shadow, width;
-    color: white;
+    color: black;
     word-break: break-all;
-    border-top: 1px solid white;
+    border: 1px solid black;
     box-shadow: 4px 2px #000;
 
-}
-
-@media only screen and (max-width: 900px) {
-    .project{
-        width: 300px;
-        height: 200px;
-    }
 }
 
 .project:hover {
@@ -37,4 +29,5 @@
 .header {
     font-weight: bold;
     position: relative;
+    color: #FF5F6D;
 }

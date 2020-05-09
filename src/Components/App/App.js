@@ -16,9 +16,6 @@ class App extends React.Component {
             <BrowserRouter>
                     <div className={'frag'}>
                         <Route path="/" component={MyNavbar}></Route>
-                        <Route path="/" exact component={Landing}></Route>
-                        <Route path="/" exact component={WorkExperience}></Route>
-                        <Route path="/" exact component={Projects}></Route>
 
                         <Route path="/Web-Portfolio" exact component={Landing}></Route>
                         <Route path="/Web-Portfolio" exact component={WorkExperience}></Route>

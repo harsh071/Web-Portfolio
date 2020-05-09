@@ -6,7 +6,7 @@ import './Landing.css';
 import {ListGroup} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faAngleDoubleDown, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default function Landing() {
     const props = useSpring({opacity: 1, from: {opacity: 0}});
@@ -33,16 +33,16 @@ export default function Landing() {
                         leave={{transform: 'translate3d(0,80px,0)'}}>
                         {item => props =>
                             {
-                                return <p href={'#'} className={'dev-text'} style={{props}}>
+                                return <h2 className={'dev-text'} style={{props}}>
                             Software Developer
-                        </p>}}
+                        </h2>}}
                     </Transition>
                     <Transition
                         items={items} keys={item => item.key}
                         from={{transform: 'translate3d(-150px,0,0)'}}
                         enter={{transform: 'translate3d(0,0px,0)'}}
                         leave={{transform: 'translate3d(0,80px,0)'}}>
-                        {item => props => <h2 className={'dev-text'} style={props}>
+                        {item => props => <h2 className={'connect-text'} style={props}>
                             Connect With Me!
                         </h2>}
                     </Transition>
@@ -55,6 +55,9 @@ export default function Landing() {
                         <div className={'social-media-item'}
                              onClick={()=>{window.open('mailto:hypharsh@gmail.com')}}
                         ><FontAwesomeIcon style={{width: '30px', height: '30px'}} icon={faEnvelope}/></div>
+                    </div>
+                    <div>
+                        <FontAwesomeIcon style={{width: '30px', height: '30px',marginTop:'10px'}} icon={faAngleDoubleDown}/>
                     </div>
                 </div>
             </div>

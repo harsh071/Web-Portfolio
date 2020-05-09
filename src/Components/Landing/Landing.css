@@ -1,19 +1,18 @@
 .landing {
     display: flex;
-    width: 100%;
-    height: 100%;
     color: white;
     background: transparent;
     transition: width 2s;
-    margin-top:10px;
+    margin:10px 10px 10px 0px;
 
-    height:100vh;
+    height:90vh;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+
 }
 
 
@@ -29,7 +28,6 @@
 
     position: relative;
     display: inline-block;
-    font-size: 2em;
     font-weight: 800;
     overflow: hidden;
 }
@@ -45,7 +43,7 @@
     flex-direction: row;
     justify-content: center;
     height: fit-content;
-    margin: 20px;
+    margin: 10px;
     width: 100%;
 }
 
@@ -58,7 +56,7 @@
     color: black;
     font-weight: bolder;
     transition: width 2s;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .landing-text {
@@ -68,9 +66,11 @@
     margin-left: 10px;
     align-items: center;
 }
-
+.connect-text{
+    font-size: 20px;
+}
 .image-landing {
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
     border: 1px orangered solid;
     transition: width 2s;
@@ -82,7 +82,7 @@
 .image-landing:hover{
     border: 0px #FF5F6D solid;
     box-shadow: 8px 8px #379683;
-    width: 350px;
+    width: 200px;
 }
 
 .name-font {
@@ -90,7 +90,7 @@
     background: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     text-shadow: 3px 3px #102b25;
     transition-duration: 1s,1s;

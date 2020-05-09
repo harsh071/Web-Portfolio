@@ -4,10 +4,11 @@
     height: fit-content;
     margin: 10px auto 20px auto;
     padding: 20px;
-    background: #203864;
+    background: white;
     width: 90%;
-    box-shadow: 5px 5px #000;
-
+    border: #f7f7f7;
+    box-shadow: 2px -2px #000;
+    border:   2px solid  #000;
     transition-duration: 0.5s,0.5s;
     transition-property: box-shadow,width;
 }
@@ -17,20 +18,20 @@
 .project-list-item-name{
     font-size: 30px;
     font-weight: 700;
-    color: white;
-    text-shadow: 2.3px -0.7px rgba(0, 0, 0, 0.31);
+    color: #FF5F6D;
+    text-shadow: 2.3px -0.7px white;
 
 }
 
 .project-list-item-description{
     font-size: 16px;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 
 .project-list-item-language{
     font-size: 12px;
-    color: white;
+    color: black;
     font-weight: 700;
 
 }

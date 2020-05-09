@@ -7,6 +7,8 @@ import Projects from "../Project/Projects";
 import {BrowserRouter, Route} from "react-router-dom";
 import WorkExperience from "../WorkExperience/WorkExperience";
 import ParticlesContainer from "../ParticlesContainer";
+import ProjectGrid from "../ProjectGrid/ProjectGrid";
+import MyNavbar from "../Navbar/Navbar";
 
 
 class App extends React.Component {
@@ -14,11 +16,12 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                     <div className={'frag'}>
+                        <Route path="/" component={MyNavbar}></Route>
                         <Route path="/" exact component={Landing}></Route>
-                        <Route path="/" exact component={AboutMe}></Route>
                         {/*<Route path="/" exact component={Projects}></Route>*/}
-                        <Route path="/" component={WorkExperience}></Route>
-                        {/*<Route path="/Projects" component={Projects}></Route>*/}
+                        <Route path="/" exact component={WorkExperience}></Route>
+                        {/*<Route path="/" exact component={Projects}></Route>*/}
+                        <Route path="/ProjectGrid" component={ProjectGrid}></Route>
                         {/*<Route path="/" exact component={Projects}></Route>*/}
                         {/*<Route path="/Work" component={WorkExperience}></Route>*/}
                         {/*<Route path="/Projects" component={Projects}></Route>*/}

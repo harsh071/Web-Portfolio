@@ -4,17 +4,43 @@
     flex-direction: column;
     align-items: center;
     font-weight: bolder;
-    margin:40px;
-    border-left : 2px solid white;
-    border-right : 2px solid white;
+    margin: 40px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     height: 30px;
 
 }
 
-.work-place{
+.work-place {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 23px;
-    color:black;
+    color: black;
+    margin: 10px;
+
 }
+@media only screen and (max-width: 700px) {
+    .work-place {
+        font-size: 18px;
+        margin: 10px;
+
+    }
+    .work-time{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (max-width: 550px) {
+    .work-place {
+        font-size: 12px;
+        margin: 3px;
+
+    }
+
+    .work-time {
+        font-size: 13px;
+    }
+}
+

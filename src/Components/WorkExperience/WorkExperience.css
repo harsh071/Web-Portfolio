@@ -1,36 +1,58 @@
 .work-experience {
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
     width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: #fff;
 }
-.title{
-    display:flex;
+.jumbotron{
+    background: #fff; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+    width: 100%;
+}
+
+.title {
+    display: flex;
     justify-content: center;
     color: white;
     text-shadow: 3px 3px #102b25;
     padding: 10px;
-    margin: 30px 30px 0px 35px;
+    margin: 30px 30px 30px 35px;
     font-size: 40px;
     text-decoration: underline;
     align-self: center;
-    background: #FF5F6D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FF5F6D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF5F6D, #FFC371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF5F6D, #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.work{
+.work {
     color: black;
-    margin:10px
+    margin: 10px
 }
 
 
-.  work-container{
+
+. work-container {
     display: flex;
     flex-direction: column;
     width: fit-content;
     margin: 20px
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .title {
+        font-size: 25px;
+        text-align: center;
+    }
 }

@@ -1,7 +1,7 @@
 .html{
     scroll-behavior: smooth;
-
 }
+
 .parag {
     text-align: center;
     margin: 0 15% 0 15%;
@@ -11,9 +11,7 @@
 
 
 .frag {
-    display: flex;
     font-family: 'Raleway', sans-serif;
-    flex-direction: column;
 }
 
 .bold {

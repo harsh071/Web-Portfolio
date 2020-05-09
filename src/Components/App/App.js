@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutMe from "../AboutMe/AboutMe";
 import '../App/App.css'
 import Landing from '../Landing/Landing'
 import Projects from "../Project/Projects";
@@ -18,18 +17,15 @@ class App extends React.Component {
                     <div className={'frag'}>
                         <Route path="/" component={MyNavbar}></Route>
                         <Route path="/" exact component={Landing}></Route>
-                        <Route path="/Web-Portfolio" exact component={Landing}></Route>
                         <Route path="/" exact component={WorkExperience}></Route>
                         <Route path="/" exact component={Projects}></Route>
 
+                        <Route path="/Web-Portfolio" exact component={Landing}></Route>
                         <Route path="/Web-Portfolio" exact component={WorkExperience}></Route>
                         <Route path="/Web-Portfolio" exact component={Projects}></Route>
 
-                        {/*<Route path="/" exact component={Projects}></Route>*/}
                         <Route path="/ProjectGrid" component={ProjectGrid}></Route>
-                        {/*<Route path="/" exact component={Projects}></Route>*/}
                         <Route path="/Work" component={WorkExperience}></Route>
-                        {/*<Route path="/Projects" component={Projects}></Route>*/}
                         <ParticlesContainer/>
 
                     </div>

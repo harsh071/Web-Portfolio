@@ -6,7 +6,6 @@ import {Link, useLocation} from 'react-router-dom'
 
 const MyNavbar = () => {
     let location = useLocation();
-    console.log(location)
     return (
         <Navbar className="nav" expand="md" variant="dark"
                 style={{backgroundColor: '#FF5F6D', color: 'white', marginRight: '10px', width: '100%'}} sticky>

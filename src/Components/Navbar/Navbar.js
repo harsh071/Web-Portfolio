@@ -21,8 +21,8 @@ const MyNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse className='nav-right' id="basic-navbar-nav">
                 <Nav className="nav-color ml-auto">
-                    {(location.pathname !== '/' && location.pathname !== '/Web-Portfolio') &&
-                    <Link className={'about'} to={'Web-Portfolio'}
+                    {(location.pathname !== '/' && location.pathname !== '/Web-Portfolio/') &&
+                    <Link className={'about'} to={'/'}
                           style={{color: 'white', marginRight: '20px', fontSize: '20px'}}> Home </Link>
                     }
                     {location.pathname !== '/ProjectGrid' && <Link className={'about'} to={'ProjectGrid'} style={{

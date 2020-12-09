@@ -143,8 +143,8 @@ export default class AboutPersonal extends React.Component {
         return(
             <Section id="about">
                 <AboutContainer>
-                    <Row>
-                        <LeftCol md={6}>
+                    <Row id="technologies" >
+                        <LeftCol id="portfolio" md={6}>
                             <AnimationContainer animation="fadeIn">
                                 <ImageContainer>
                                     <RevealContent delay={500}>
@@ -165,7 +165,7 @@ export default class AboutPersonal extends React.Component {
                         </Col>
                     </Row>
                 </AboutContainer>
-                <CounterRow>
+                <CounterRow >
                     <Container>
                         <Row>
                             <Col >

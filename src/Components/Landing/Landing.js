@@ -7,6 +7,10 @@ import {ListGroup} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {faAngleDoubleDown, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import Glitch from "../glitch";
+import HeroPersonalVideo from "../../sections/hero/HeroPersonalVideo";
+import Layout from "../layout";
+import AboutPersonal from "../../sections/about/AboutPersonal";
 
 export default function Landing() {
     const props = useSpring({opacity: 1, from: {opacity: 0}});
@@ -15,6 +19,14 @@ export default function Landing() {
     return (
         <div className={'landing'}>
             <div className={'landing-all-content'}>
+                <Layout
+                    isHome={true}
+                    sections={['home', 'about', 'technologies', 'portfolio', 'testimonials', 'clients', 'contact']}
+                >
+                <HeroPersonalVideo shapes={[]}/>
+                    <AboutPersonal />
+
+                </Layout>
                 <animated.img style={props} src={process.env.PUBLIC_URL + "/LOGO.png"} className={'image-landing'}/>
                 <div className={'landing-text'}>
                     <Transition
@@ -23,7 +35,7 @@ export default function Landing() {
                         enter={{transform: 'translate3d(0,0px,0)'}}
                         leave={{transform: 'translate3d(0,300px,0)'}}>
                         {item => props => <div className='name-font' style={props}>
-                            {item.text}
+                            <Glitch text={"HARSH PATEL"}/>
                         </div>}
                     </Transition>
                     <Transition

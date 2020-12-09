@@ -14,8 +14,8 @@ class App extends React.Component {
     render() {
         return (
             <BrowserRouter>
-                    <div className={'frag'}>
-                        <MyNavbar/>
+                    <div>
+                        {/*<MyNavbar/>*/}
                         <Route path="/" exact component={Landing}></Route>
                         <Route path="/" exact component={WorkExperience}></Route>
                         <Route path="/" exact component={Projects}></Route>

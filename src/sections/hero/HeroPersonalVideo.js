@@ -66,7 +66,7 @@ export  default class HeroPersonalVideo extends React.Component {
         `
         const Heading = styled.div`
             .glitch {
-                font-size: 140px;
+                font-size: 105px;
                 line-height: 140px;
                 font-weight: 600;
                 color: #fff;

@@ -19,7 +19,7 @@ export default function Landing() {
     return (
         <Layout
             isHome={true}
-            sections={['home', 'about', 'technologies', 'portfolio', 'testimonials', 'clients', 'contact']}
+            sections={['home', 'about', 'technologies', 'work/portfolio', 'projects' , 'contact']}
         >
             <HeroPersonalVideo shapes={[]}/>
             <AboutPersonal />

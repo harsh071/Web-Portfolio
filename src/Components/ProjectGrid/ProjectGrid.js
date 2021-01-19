@@ -20,7 +20,7 @@ class ProjectGrid extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://api.github.com/users/harsh071/repos', {
+        axios.get('https://api.github.com/users/harsh071/repositories', {
         })
             .then((repositories) => {
                 this.setState({projects: repositories.data})

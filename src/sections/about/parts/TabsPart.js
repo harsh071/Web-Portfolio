@@ -7,7 +7,7 @@ class TabsPart extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            tab: "skills"
+            tab: "experience"
         }
     }
 
@@ -78,29 +78,18 @@ class TabsPart extends React.Component {
         return(
             <TabContainer>
                 <TabSelectors>
-                    <TabSelector className={this.state.tab === "skills" ? "active" : ""} onClick={() => this.setState({tab: "skills"})}>
-                        Skills
-                    </TabSelector>
+
                     <TabSelector className={this.state.tab === "experience" ? "active" : ""} onClick={() => this.setState({tab: "experience"})}>
                         Experience
                     </TabSelector>
                     <TabSelector className={this.state.tab === "education" ? "active" : ""} onClick={() => this.setState({tab: "education"})}>
                         Education
                     </TabSelector>
+                    <TabSelector className={this.state.tab === "skills" ? "active" : ""} onClick={() => this.setState({tab: "skills"})}>
+                        Skills
+                    </TabSelector>
                 </TabSelectors>
-                <Tabs>
-                    <Tab style={{
-                        display: this.state.tab === "skills" ? "block" : "none"
-                    }}>
-                        <Progress text="JavaScript , React , React-Native , Node.js " />
-                        <Progress text="Java , Spring Framework , Android Studio , JUnit" />
-                        <Progress text="C , C# , C++ , OpenGl , Unity , Unreal Engine" />
-                        <Progress text="MongoDB , SQL , HSQLDB , JPQL" />
-                        <Progress text="Python , Git " />
 
-
-                    </Tab>
-                </Tabs>
                 <Tabs>
                     <Tab style={{
                             display: this.state.tab === "experience" ? "block" : "none"
@@ -150,6 +139,19 @@ class TabsPart extends React.Component {
                         }
                     />
                     </Tab>
+                    <Tabs>
+                        <Tab style={{
+                            display: this.state.tab === "skills" ? "block" : "none"
+                        }}>
+                            <Progress text="JavaScript , React , React-Native , Node.js " />
+                            <Progress text="Java , Spring Framework , Android Studio , JUnit" />
+                            <Progress text="C , C# , C++ , OpenGl , Unity , Unreal Engine" />
+                            <Progress text="MongoDB , SQL , HSQLDB , JPQL" />
+                            <Progress text="Python , Git " />
+
+
+                        </Tab>
+                    </Tabs>
                 </Tabs>
             </TabContainer>
         )

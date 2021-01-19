@@ -175,8 +175,8 @@ export  default class HeroPersonalVideo extends React.Component {
                             <Typewriter
                                 options={{
                                 strings: [
+                                    'Web Developer',
                                     'App Developer',
-                                    'Web Designer',
                                     'UX Developer',
                                     'Full Stack Developer',
                                 ],
@@ -185,9 +185,7 @@ export  default class HeroPersonalVideo extends React.Component {
                                 }}
                             />
                         </Type>
-                        <Resume href="./">
-                            Download Resume
-                        </Resume>
+
                     </HeadingBox>
                     {this.shapes()}
                 </VideoContainer>

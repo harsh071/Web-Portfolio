@@ -15,7 +15,7 @@ export default class AboutPersonal extends React.Component {
       
     render() {
         const Section = styled.section`
-            position: relative;
+            position: relative;fff
             overflow: hidden;
             background-color: #050505;
             padding-top: 50px;
@@ -145,16 +145,16 @@ export default class AboutPersonal extends React.Component {
                 <AboutContainer>
                     <Row id="technologies" >
                         <LeftCol id="portfolio" md={6}>
-                            <AnimationContainer animation="fadeIn">
+                            <AnimationContainer key={"anim1"} animation="fadeIn">
                                 <ImageContainer>
-                                    <RevealContent delay={500}>
+                                    <RevealContent delay={200}>
                                         <Image src={process.env.PUBLIC_URL + "/aboutImage.jpg"} alt="about" />
                                     </RevealContent>
                                 </ImageContainer>
                             </AnimationContainer>
                         </LeftCol>
                         <Col md={6}>
-                            <AnimationContainer animation="fadeIn">
+                            <AnimationContainer key={"anim2"} animation="fadeIn">
                                 <Heading>About Me</Heading>
                                 <Separator />
                                 <Text>
@@ -165,33 +165,6 @@ export default class AboutPersonal extends React.Component {
                         </Col>
                     </Row>
                 </AboutContainer>
-                <CounterRow >
-                    <Container>
-                        <Row>
-                            <Col >
-                                <AnimationContainer animation="fadeIn" delay={1000}>
-                                    <CounterComponent>
-                                        <Counter value={2} duration={5} delay={1000} text="2 WorkTerm Experiences" animation={true} />
-                                    </CounterComponent>
-                                </AnimationContainer>
-                            </Col>
-                            <Col >
-                                <AnimationContainer animation="fadeIn" delay={1000}>
-                                    <CounterComponent>
-                                        <Counter value={2} duration={5} delay={1000} text="Organizations Volunteer" animation={true} />
-                                    </CounterComponent>
-                                </AnimationContainer>
-                            </Col>
-                            <Col >
-                                <AnimationContainer animation="fadeIn" delay={1000}>
-                                    <CounterComponent>
-                                        <Counter value={5} duration={5} symbol="+"  delay={1000} text="Projects" animation={true} />
-                                    </CounterComponent>
-                                </AnimationContainer>
-                            </Col>
-                        </Row>
-                    </Container>
-                </CounterRow>
             </Section>
         )
     }

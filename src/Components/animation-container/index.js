@@ -27,7 +27,7 @@ class Animation_Container extends React.Component {
         setTimeout(() => { 
             this.setState({classChanged: true});
         }
-        , delay);
+        , 100);
       }
 
 
@@ -42,8 +42,8 @@ class Animation_Container extends React.Component {
       render() {
         const { children, animation, id, height } = this.props
         return (
-            <div className={this.state.classChanged ? `animated ${animation}` : ""} style={{opacity: this.state.classChanged ? 1 : 0, height: height ? height : "auto"}} id={id} >
-                {children}
+            <div className={this.state.classChanged ? `animated ${animation}` : `animated ${animation}`} style={{opacity: this.state.classChanged ? 1 : 0, height: height ? height : "auto"}} id={id} >
+                    {children}
             </div>
         );
       }

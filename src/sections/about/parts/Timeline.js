@@ -70,9 +70,14 @@ class Timeline extends React.Component {
             margin-bottom: 5px;
         `
         const Text = styled.p`
-            font-size: 12px;
-            font-weight: 300;
+            font-size: 14px;
+            font-weight: 500;
             color: #c5c5c5;
+            border-top: 1px solid #c5c5c5;
+            padding-top: 10px
+        `
+        const hrTag = styled.hr`
+
         `
 
         const Years = styled.h5`
@@ -103,9 +108,10 @@ class Timeline extends React.Component {
                     <Years>{selector}</Years>
                     <Heading>{data[selector].title}</Heading>
                     <Company>{data[selector].institution}</Company>
-                    {data[selector].description.split('\n').map((text)=><Text>
+                    {data[selector].description.split('\n').map((text,i)=><Text key={i}>
                         {text}
                     </Text>)}
+
                 </Details>
                 <TimelineSelectors>
                     {Object.keys(this.props.data).map((value, index) => (

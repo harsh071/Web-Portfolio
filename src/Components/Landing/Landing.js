@@ -11,6 +11,8 @@ import Glitch from "../glitch";
 import HeroPersonalVideo from "../../sections/hero/HeroPersonalVideo";
 import Layout from "../layout";
 import AboutPersonal from "../../sections/about/AboutPersonal";
+import ServicesThree from "../../sections/services/ServicesThree";
+import ContactPersonal from "../../sections/contact/ContactPersonal";
 
 export default function Landing() {
     const props = useSpring({opacity: 1, from: {opacity: 0}});
@@ -19,10 +21,12 @@ export default function Landing() {
     return (
         <Layout
             isHome={true}
-            sections={['home', 'about', 'technologies', 'work/portfolio', 'projects' , 'contact']}
+            sections={['home', 'about', 'projects' , 'contact']}
         >
             <HeroPersonalVideo shapes={[]}/>
             <AboutPersonal />
+            <ServicesThree/>
+            <ContactPersonal />
 
         </Layout>
         // <div className={'landing'}>
